@@ -5,7 +5,19 @@
   </div>
   <router-view/>
   <Button label="Submit" />
+  <list-character></list-character>
 </template>
+
+<script>
+import ListCharacter from '@/components/list-character.vue'
+
+export default {
+  name: 'app',
+  components: {
+    ListCharacter
+  }
+}
+</script>
 
 <style lang="scss">
 #app {
