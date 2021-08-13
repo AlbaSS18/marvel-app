@@ -4,6 +4,7 @@
     <router-link to="/about">About</router-link>
   </div>
   <router-view/>
+  <Button label="Submit" />
 </template>
 
 <style lang="scss">
