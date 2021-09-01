@@ -4,8 +4,7 @@
     <router-link to="/about">About</router-link>
   </div>
   <router-view/>
-  <Button label="Submit" />
-  <list-character></list-character>
+  <list-character :characters="characters"></list-character>
 </template>
 
 <script>
@@ -13,6 +12,33 @@ import ListCharacter from '@/components/list-character.vue'
 
 export default {
   name: 'app',
+  data() {
+    return {
+      characters: [
+        {
+          id: 1,
+          Species: "Human",
+          Age: '45-51',
+          Name: "C. Randall Poopenmeyer",
+          Profession: "Mayor of New New York City"
+        },
+        {
+          id: 2,
+          Species: "Human",
+          Age: 'Unknown',
+          Name: "Candy",
+          Profession: "Formerly: Crew member of Planet Express"
+        },
+        {
+          id: 3,
+          Species: "Human",
+          Age: '41-47',
+          Name: "Hermes Conrad",
+          Profession: "Currently: Bureaucrat and AccountantFormerly: Limbo champion, Robot Inspector"
+        }
+      ]
+    }
+  },
   components: {
     ListCharacter
   }

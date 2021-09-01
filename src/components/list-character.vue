@@ -12,30 +12,9 @@
 <script>
 export default {
   name: "list-characters",
-  data() {
-    return {
-      characters: [
-        {
-          Species: "Human",
-          Age: '45-51',
-          Name: "C. Randall Poopenmeyer",
-          Profession: "Mayor of New New York City"
-        },
-        {
-          Species: "Human",
-          Age: 'Unknown',
-          Name: "Candy",
-          Profession: "Formerly: Crew member of Planet Express"
-        },
-        {
-          Species: "Human",
-          Age: '41-47',
-          Name: "Hermes Conrad",
-          Profession: "Currently: Bureaucrat and AccountantFormerly: Limbo champion, Robot Inspector"
-        }
-      ]
-    }
-  }
+  props: {
+    characters: Array,
+  },
 };
 </script>
 
