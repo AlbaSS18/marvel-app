@@ -11,6 +11,7 @@ import Button from 'primevue/button'
 
 import DataTable from 'primevue/datatable'
 import Column from 'primevue/column'
+import InputText from 'primevue/inputtext'
 
 const app = createApp(App); // Create App
 
@@ -20,5 +21,7 @@ app.use(PrimeVue); // Install PrimeVue
 app.component('Button', Button); // Component Button
 app.component('DataTable', DataTable); // Component Table
 app.component('Column', Column); // Component Column in Table
+app.component('InputText', InputText); // Component InputText
+
 
 app.mount('#app')

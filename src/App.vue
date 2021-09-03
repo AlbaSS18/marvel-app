@@ -4,11 +4,13 @@
     <router-link to="/about">About</router-link>
   </div>
   <router-view/>
+  <form-character></form-character>
   <list-character :characters="characters"></list-character>
 </template>
 
 <script>
-import ListCharacter from '@/components/list-character.vue'
+import ListCharacter from '@/components/list-character.vue';
+import FormCharacter from '@/components/form-character.vue';
 
 export default {
   name: 'app',
@@ -40,7 +42,8 @@ export default {
     }
   },
   components: {
-    ListCharacter
+    ListCharacter,
+    FormCharacter
   }
 }
 </script>
